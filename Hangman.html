@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="Hangman.css">
+</head>
+
+
+<body>
+
+
+
+
+    <div id="options">
+       
+        <div id="dropdown">
+        <div id="themeBox">THEME</div>
+        <div id="modes">
+
+
+       
+     <div id="m1">Man </div>
+         
+     <div id="m2">Long Man </div>
+     
+     <div id="m3">Prisoner </div>
+     
+     <div id="m4">Girl</div>
+     </div>
+       
+    </div>
+   
+ 
+       <div id="stats">
+        <div >Seconds Left: <span id="secondsLeft"></span></div><!--add this-->
+        <div><span id="diff"></span></div>
+        <div>Category: <span id="categ"></span></div><!--edit added space after category-->
+        <div id="gamesWon">Games Won: <span id="nbGamesWon"></span>/ <span id="totalGames"></span></div>
+        <input id="hint" value="HINT" type="button">
+        <input type="button" id="newgame" value="Restart" >
+        <div> <img src="settings.png" class="settingIcon" onclick="reStart()" >
+            <a href="startPage.html" id="linkToReStart"></a></div>
+       </div>
+
+
+    </div>
+   
+
+
+    <div id="game">
+
+
+        <div id="left"><img src="MANI6.png" alt="" id="man"></div>
+
+
+        <div class="right">
+            <div id="word"> </div>
+            <div id="keyboard"></div>
+        </div>
+
+
+    </div>
+    <div id="btr" class="zero"></div>
+  <div id="btl" class="zero"></div>
+  <div id="easyB" class="zero"></div>
+  <div id="mediumB" class="zero">
+  </div>
+  <div id="hardB" class="zero"></div>
+
+  
+
+
+    <script type="text/javaScript" src="hangman.js"></script>
+</body>
+
+
+</html>
