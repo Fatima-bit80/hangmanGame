@@ -37,7 +37,7 @@ mediumButton.addEventListener("click", changeButton);
 hardButton.addEventListener("click", changeButton);
 
 function leftArrowf() {                       //function change category to the next in the right
-  if (document.URL.indexOf("html") < -1) {//edit
+  if (document.URL.indexOf("Hangman.html") < -1) {//edit
 
     if (indexCategory > 0)
       indexCategory--;
@@ -49,7 +49,7 @@ function leftArrowf() {                       //function change category to the 
   }
 }
 function rightArrowf() {                      //function change category to the next in the right
-  if (document.URL.indexOf("html") < 1 ) {//edit
+  if (document.URL.indexOf("Hangman.html") < 1 ) {//edit
 
     if (indexCategory < categoriesList.length - 1)
       indexCategory++;
@@ -345,7 +345,7 @@ function setTime() {
 
 function setGame() {
 
-  if (document.URL.indexOf("html") > 0) {
+  if (document.URL.indexOf("Hangman.html") > 0) {
     getElts();
     nbErrors = 0;
     nbCorrect = 0;
